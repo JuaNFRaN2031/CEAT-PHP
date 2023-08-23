@@ -7,7 +7,7 @@
 <body>
     <?php
         echo '<p>Hola Mundo!!!</p>';
-        echo 'Hola', ' Mundo',' me llamo:',' Juan Fran';
+        echo 'Hola', ' Mundo',' me llamo',' Juan Fran';
     ?>
 </body>
 </html>

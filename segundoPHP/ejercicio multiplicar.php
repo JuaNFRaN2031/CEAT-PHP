@@ -10,7 +10,7 @@
 <body>
     <?php
     /*Ejercicio utilizando for*/
-    echo "<h2>Tablas de multiplicar con FOR</h2>";
+    echo "<h2>Tablas de multiplicar con FOR.</h2>";
     //Crea las tablas de multiplicar desde el 1 al 10
     for ($i = 1; $i < 11; $i++) {
         echo "<h4>Tabla del $i </h4>";
@@ -20,7 +20,7 @@
         echo "<br>";
     }
     echo "<hr>";
-    echo "<h2>Tablas de multiplicar con While</h2>";
+    echo "<h2>Tablas de multiplicar con While.</h2>";
     //Crea las tablas de multiplicar desde el 1 al 10
     $i = 1;
     $x = 1;

@@ -1,79 +1,36 @@
 <?php
-    echo "<h2>Pruebas</h2>";
-    function variableLocal()
-    {
-        $miVariableLocal = 5;
-        echo "\$miVariableLocal tiene valor de $miVariableLocal";
-    }
-    variableLocal();
     echo "<br>";
-    $miVariableGlobal = 15;
-    $valorDecimal = 75.4999;
-    function variableGlobal()
-    {
-        global $miVariableGlobal, $valorDecimal;
-        $miVariableGlobal += $valorDecimal;
-        echo "\$miVariableGlobal ahora vale $miVariableGlobal <br>";
+    $paises = ["Italia","España","Alemania","Andorra","Francia"];
+    echo "Mi array \$paises tiene " . count($paises) . " países <br>";
+    $consulta = in_array('Alemania',$paises);
+    echo "¿Alemania esta en el array? " . ($consulta==1?"Si, esta":"No, esta");
+    echo "<br>";
+    $indice = array_search('Francia',$paises);
+    echo "La posición de Francia en mi array es $indice <br>";
+    $indice = array_search('Andorra',$paises);
+    echo "La posición de Andorra en mi array es $indice <br>";
+    $indice = array_search('España',$paises);
+    echo "La posición de España en mi array es $indice <br>";
+    $indice = array_search('Italia',$paises);
+    echo "La posición de Italia en mi array es $indice <br>";
+    $indice = array_search('Nueva Zelanda',$paises);
+    echo "La posición de Nueva Zelanda en mi array es " . ($indice == false?" ERROR\ No esta en el array":"$indice");
+    echo "<br><br>";
+    echo "<h2>Tabla FOREACH Comunidades Autónomas</h2>";
+    $comunidades = array("Andalucía" => 'Sevilla', "Aragón" => 'Zaragoza', "Canarias" => 'Santa Cruz de Tenerife / Las Palmas de Gran Canaria	',
+        "Cantabria" => 'Santander', "Castilla y León" => 'Valladolid', "Castilla-La Mancha" => 'Toledo', "Cataluña" => 'Barcelona', "Ceuta" => 'Ceuta', "Comunidad Valenciana" => 'Valencia', "Comunidad de Madrid" => 'Madrid', "Extremadura" => 'Mérida', "Galicia" => 'Santiago de Compostela', "Islas Baleares" => 'Palma de Mallorca', "La Rioja" => 'Logroño', "Melilla" => 'Melilla', "Navarra" => 'Pamplona', "País Vasco" => 'Vitoria', "Principado de Asturias" => 'Oviedo', "Región de Murcia" => 'Murcia');
+    echo "<table style='border: 2px solid black; width: 90%; margin: auto; text-align: center'><thead><tr><th>Comunidad Autónoma</th><th>Capital</th></tr></thead>";
+    foreach ($comunidades as $com => $comunidadesItem) {
+        echo "<tbody><tr><td>$com</td><td>$comunidadesItem</td></tr></tbody>";
     }
-    variableGlobal();
-    echo "\$miVariableGlobal fuera de la función vale $miVariableGlobal <br>";
-    variableGlobal();
-    echo "\$miVariableGlobal fuera de la función vale $miVariableGlobal <br>";
-    function variableStatic()
-    {
-        static $edad = 18;
-        echo "La edad es $edad <br>";
-        $edad++;
-    }
-    variableStatic();
-    variableStatic();
-    variableStatic();
-    unset($edad); // Si después no necesito la variable no se puede eliminar porque es estático;
-    variableStatic();
-    /*******************************************************************/
-    // Declara tres funciones como las anteriores, donde exista:
-    /*
-     * 1) Una que sus variables locales $x e $y y realiza una suma entre estas variables
-     * 2) Declara una variable llamada $yy y declara dentro de la función como global e increméntala en 2, muestra su
-     *  valor fuera de la función
-     * 3) Crea una función llamada puntuación y dentro declara una variable static llamada puntos, increméntala cada
-     * vez que se invoque y muestra su valor
-     */
-    echo "<h2>Ejercicio</h2>";
-    function localVariables()
-    {
-        $x = 10;
-        $y = 20;
-        $z = $x + $y;
-        echo "La suma de \$x -> $x + \$y -> $y es: $z <br>";
-    }
-    localVariables();
-    $yy = 50;
-    function globalVariables()
-    {
-        global $yy;
-        $yy += 2;
-        echo "El valor de \$yy es: $yy <br>";
-    }
-    globalVariables();
-    function puntuacion()
-    {
-        static $puntos = 4;
-        $puntos++;
-        echo "\$puntos vale: $puntos <br>";
-    }
-    puntuacion();
-    puntuacion();
-    puntuacion();
-    puntuacion();
-    puntuacion();
-    puntuacion();
+    echo "</table>";
 ?>
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
-    <title>Tercer PHP</title>
+    <title>Cuarto PHP</title>
 </head>
-<body></body>
+<body>
+</body>
 </html>

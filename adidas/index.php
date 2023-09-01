@@ -18,7 +18,6 @@
         <div class="black-hr">
             <p id="dia-hora"></p>
         </div>
-
         <div class="topnav">
             <a href="index.php"><img src="img/Adidas-logo.png" style="width: 65px" alt="Logo Inicio"></a>
             <a class="topnav-centrado" href="#clientes">HOMBRE</a>

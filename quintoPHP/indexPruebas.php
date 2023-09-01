@@ -31,10 +31,10 @@
     <title>Quinto PHP</title>
 </head>
 <body>
-<h2>De 0 a 1000 de 2 en 2 en JavaScript</h2>
-<p id="insert2en2"></p>
-<h2>De 1000 0 en JavaScript</h2>
-<p id="insert1000a0"></p>
-<script src="js/script.js"></script>
+    <h2>De 0 a 1000 de 2 en 2 en JavaScript</h2>
+    <p id="insert2en2"></p>
+    <h2>De 1000 0 en JavaScript</h2>
+    <p id="insert1000a0"></p>
+    <script src="js/script.js"></script>
 </body>
 </html>

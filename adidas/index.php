@@ -12,18 +12,18 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
     <script src="js/script.js"></script>
 <body>
-
     <header>
+    <div class="flex-header">
         <!-- Línea horizontal con fondo negro -->
         <div class="black-hr">
-
+            <p id="dia-hora"></p>
         </div>
 
         <div class="topnav">
-            <a href="index.php"><img src="img/Adidas-logo.png" style="width: 65px"></a>
+            <a href="index.php"><img src="img/Adidas-logo.png" style="width: 65px" alt="Logo Inicio"></a>
             <a class="topnav-centrado" href="#clientes">HOMBRE</a>
             <a class="topnav-centrado" href="#clientes">MUJER</a>
-            <a class="topnav-centrado" href="#clientes">NIÑXS</a>
+            <a class="topnav-centrado" href="#clientes">NIÑOS</a>
             <a class="topnav-centrado" href="#productos">NOVEDADES</a>
             <a class="topnav-centrado" href="#clientes">RESEÑAS</a>
             <input class="topnav-centrado" type="text" placeholder="Buscar..">
@@ -31,6 +31,7 @@
         <div class="videoBanner">
             <video src="video/yt1s.com%20-%20adidas%20Basketball%20%20DAME%20TIME%20The%20Damian%20Lillard%20Story%20%20Chapter%20One%20Dame%20Time.mp4" autoplay muted loop></video>
         </div>
+    </div>
     </header>
 <br>
 <br>
@@ -150,6 +151,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

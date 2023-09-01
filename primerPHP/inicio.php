@@ -9,7 +9,7 @@
 <body>
     <?php
     echo "<p>Hola PHP</p>";
-    echo "<p>Bienvenido a <a href='index.php' target='_blank' title='Index'>miSitio.com</a></p>";
+    echo "<p>Bienvenido a <a href='indexPruebas.php' target='_blank' title='Index'>miSitio.com</a></p>";
     echo "<p>Bienvenido a <a href='otro.php' target='_blank' title='Otro'>otro.com</a></p>";
     const hola = 'si';
     echo " AAAAAAAAAAAAAAAAAAAAAAAAAA " . hola;

@@ -1,4 +1,7 @@
 <?php
+    include 'header.php';
+?>
+<?php
     $numeracion2en2 = 0;
     $numeracionSingle = 1000;
     echo "<h2>De 0 a 1000 de 2 en 2</h2>";
@@ -35,6 +38,9 @@
     <p id="insert2en2"></p>
     <h2>De 1000 0 en JavaScript</h2>
     <p id="insert1000a0"></p>
-    <script src="js/script.js"></script>
+    <script src="js/scriptPruebas.js"></script>
+    <?php
+        include 'footer.php';
+    ?>
 </body>
 </html>

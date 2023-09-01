@@ -30,12 +30,19 @@
         array('img/Zapatilla_Ultraboost_Clima_DNA_Naranja.jpg',"Zapatilla Ultraboost Clima DNA Naranja",150),
         array('img/Zapatilla_ZX_2K_Boost_Blanco.jpg',"Zapatilla ZX 2K Boost Blanco",100)
     );
+    $comunidades=array(
+        array('Andalucía',"Sevilla",'693.229'),
+        array('Castilla-la-Mancha',"Toledo",'86.906'),
+        array('Madrid',"Madrid",'3.339.931'),
+        array('Murcia',"Murcia",'447.182'),
+        array('Aragón',"Zaragoza",'666.880')
+    );
 ?>
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
-    <title>Productos Adidas</title>
+    <title>Tablas con FOR y FOREACH</title>
     <style>
         h2 {
             text-align: center;
@@ -86,7 +93,7 @@
     </style>
 </head>
 <body>
-    <h2>Array tridimensional</h2>
+    <h2>Array bidireccional con FOR</h2>
     <table class="productos">
         <thead class="productos-thead">
             <th class="productos-th">Producto</th>
@@ -94,13 +101,12 @@
             <th class="productos-th">Precio</th>
         </thead>
         <?php
-            for($fila=0;$fila<9;$fila++){
+            for($fila=0;$fila<9;$fila++) {
                 echo "<tr class='productos-tr'>";
                 for ($col=0;$col<3;$col++){
-
-                    if ($col==0){
+                    if ($col==0) {
                         echo "<td class='productos-td'><img src='".$productos[$fila][$col]."'></td>";
-                    }else{
+                    } else {
                         echo "<td class='productos-td'>".$productos[$fila][$col]."</td>";
                     }
                 }
@@ -108,5 +114,59 @@
             }
         ?>
     </table>
+    <h2>Array bidireccional con FOREACH</h2>
+    <table class="productos">
+        <thead class="productos-thead">
+            <th class="productos-th">Producto</th>
+            <th class="productos-th">Descripción</th>
+            <th class="productos-th">Precio</th>
+        </thead>
+        <?php
+            foreach ($productos as $filas) {
+                echo "<tr class='productos-tr'>";
+                foreach ($filas as $indice => $col) {
+                    if ($indice == 0){
+                        echo "<td class='productos-td'><img src='".$col."'></td>";
+                    }else{
+                        echo "<td class='productos-td'>".$col."</td>";
+                    }
+                }
+            }
+            echo "</tr>";
+        ?>
+    </table>
+<!--  ACTIVIDAD: Crea una tabla de las Comunidades Autónomas, capital, población (al menos 5) y muestralo en lista, con for y con foreach  -->
+    <h2>Array bidireccional con FOR de las comunidades</h2>
+    <table class="productos">
+        <thead class="productos-thead">
+            <th class="productos-th">Comunidad Autónoma</th>
+            <th class="productos-th">Capital</th>
+            <th class="productos-th">Población</th>
+        </thead>
+        <?php
+            for ($fila = 0;$fila<5;$fila++) {
+                echo "<tr class='productos-tr'>";
+                for ($col=0;$col<3;$col++) {
+                    echo "<td class='productos-td'>".$comunidades[$fila][$col]."</td>";
+                }
+            }
+        ?>
+    </table>
+    <h2>Array bidireccional con FOREACH de las comunidades</h2>
+    <table class="productos">
+        <thead class="productos-thead">
+            <th class="productos-th">Comunidad Autónoma</th>
+            <th class="productos-th">Capital</th>
+            <th class="productos-th">Población</th>
+        </thead>
+        <?php
+            foreach ($comunidades as $filas) {
+                echo "<tr class='productos-tr'>";
+                foreach ($filas as $indice => $col) {
+                    echo "<td class='productos-td'>$col</td>";
+                }
+                echo "</tr>";
+            }
+        ?>
 </body>
 </html>

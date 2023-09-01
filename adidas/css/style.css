@@ -44,8 +44,8 @@
     float: right;
     padding: 6px;
     border: none;
-    margin: 18px auto; /* Ajustado para centrar verticalmente y centrar horizontalmente */
-    margin-right: 10px;
+    /* Ajustado para centrar verticalmente y centrar horizontalmente */
+    margin: 18px 10px 18px auto;
     font-size: 17px;
     background-color: rgba(187, 187, 187, 0.56);
 }

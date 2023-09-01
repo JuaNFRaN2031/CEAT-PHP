@@ -1,4 +1,11 @@
 <?php
+    $numeracion2en2 = 0;
+    $numeracionSingle = 1000;
+        while ($numeracion2en2 <= $numeracionSingle)
+        {
+            echo "$numeracion2en2 + <br>";
+            $numeracion2en2 =+ 2;
+        }
 
 ?>
 

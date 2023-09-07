@@ -34,7 +34,7 @@
  correo"><?=$email?></a></h3>
 <br>
 <a href="http://localhost:63342/CEAT-PHP/quintoPHP/contacto.php"
-   title="Volver a contacto.php" id="volver">Volver</a>
+   title="Volver a contacto.php" id="volver">Volver a Contacto</a>
 <?php
     include 'footer.php';
 ?>

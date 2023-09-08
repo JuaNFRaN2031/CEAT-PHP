@@ -15,7 +15,7 @@
     if ($error != "") {
         header("Location:http://localhost:63342/CEAT-PHP/quintoPHP/contacto.php?mensaje=$error");
     } else {
-        header("Location:http://localhost:63342/CEAT-PHP/quintoPHP/registro.php?nombre=$nombre&email=$email");
+        header("Location:https://php.juanfra.cursoceat.es/quintoPHP/lectura.php?nombre=$nombre&email=$email");
         $error = "";
     }
 ?>

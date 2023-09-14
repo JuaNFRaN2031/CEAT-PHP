@@ -18,13 +18,13 @@
 </head>
 <body>
 <div class="row">
-    <div class="header-card-green col-6">
+    <div class="card-green col-6">
         <h1>Manipular los números</h1>
         <p>Las funciones más útiles para manipular los números son las siguientes:</p>
     </div>
 </div>
 <div class="row">
-    <div class="header-card-lightgreen col-6">
+    <div class="card-lightgreen col-6">
         <h2>Valor absoluto de un número</h2>
         <?php
             $numero = -365;
@@ -34,7 +34,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="header-card-vanilla col-6">
+    <div class="card-vanilla col-6">
         <h2>Redondeo de un número al entero superior</h2>
     </div>
 </div>
@@ -44,17 +44,17 @@
     </div>
 </div>
 <div class="row">
-    <div class="header-card-brown col-6">
+    <div class="card-brown col-6">
         <h2>Cociente de la división entera de dos enteros</h2>
     </div>
 </div>
 <div class="row">
-    <div class="header-card-green col-6">
+    <div class="card-green col-6">
         <h2>Máximo y Mínimo de un conjunto de valores</h2>
     </div>
 </div>
 <div class="row">
-    <div class="header-card-lightgreen col-6">
+    <div class="card-lightgreen col-6">
         <h2>Números aleatorios: Devuelve un número aleatorio entero entre el límite mínimo y el límite máximo</h2>
     </div>
 </div>

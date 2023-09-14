@@ -12,23 +12,23 @@ Colores
     #FAEDCD
     #D4A373
 */
-.header-card-green {
+.card-green {
     background-color: #CCD5AE;
 }
 
-.header-card-lightgreen {
+.card-lightgreen {
     background-color: #E9EDC9;
 }
 
-.header-card-vanilla {
+.card-vanilla {
     background-color: #FEFAE0;
 }
 
-.header-card-dark-vanilla {
+.card-dark-vanilla {
     background-color: #FAEDCD;
 }
 
-.header-card-brown {
+.card-brown {
     background-color: #D4A373;
 }
 

@@ -116,25 +116,40 @@
         </div>
     </section>
     <section id="clientes">
+        <div class="clientes2">
         <h1 class="titulos">RESEÑAS DE NUESTROS CLIENTES</h1>
-        <div class="cliente1">
-            <p>
-                Mi viaje como cliente de Adidas ha sido una verdadera experiencia de satisfacción y estilo. La página web de la marca y su gama de productos han establecido un estándar impresionante que combina a la perfección la comodidad moderna con el estilo distintivo.
-            </p>
-            <img src="img/original.png" class="img-clientes">
-        </div>
-        <div class="cliente2">
-            <img src="img/bienestar-optimismo-f-archivo.png" class="img-clientes">
-            <p>
-                Increíblemente satisfecha con mi experiencia en la página web de Adidas y sus emocionantes productos!
-                Como un apasionado del deporte y la moda, he encontrado en esta marca una combinación perfecta de estilo, calidad y rendimiento.
-            </p>
-        </div>
-        <div class="cliente1">
-            <p>
-                Como cliente de Adidas, he encontrado la página web y los productos de la marca excepcionales en términos de calidad, estilo y variedad. La combinación de tecnología innovadora y diseño elegante hace que Adidas siga siendo una opción líder para aquellos que buscan productos deportivos y de moda de alta calidad. Mi experiencia general ha sido positiva y no dudo en recomendar tanto la página web como los productos de Adidas a otros entusiastas del deporte y la moda.
-            </p>
-            <img src="img/person-smiling.png" class="img-clientes">
+            <div class="divCliente">
+                <div class="reseña">
+                    <p>Mi viaje como cliente de Adidas ha sido una verdadera experiencia de satisfacción y estilo. La
+                        página web de la marca y su gama de productos han establecido un estándar impresionante que combina a la perfección la comodidad moderna con el estilo distintivo.
+                    </p>
+                </div>
+                <div class="imgCliente">
+                    <img src="img/original.png" class="img-clientes">
+                </div>
+            </div>
+            <div class="divCliente">
+                <div class="imgCliente">
+                    <img src="img/bienestar-optimismo-f-archivo.png" class="img-clientes">
+                </div>
+                <div class="reseña">
+                    <h1>Cómo Crear el Rincón de Lectura Perfecto en tu Hogar</h1>
+                    <p>Increíblemente satisfecha con mi experiencia en la página web de Adidas y sus emocionantes
+                        productos!
+                        Como un apasionado del deporte y la moda, he encontrado en esta marca una combinación perfecta de estilo, calidad y rendimiento.
+                    </p>
+                </div>
+            </div>
+            <div class="divCliente">
+                <div class="reseña">
+                    <p>
+                        Como cliente de Adidas, he encontrado la página web y los productos de la marca excepcionales en términos de calidad, estilo y variedad. La combinación de tecnología innovadora y diseño elegante hace que Adidas siga siendo una opción líder para aquellos que buscan productos deportivos y de moda de alta calidad. Mi experiencia general ha sido positiva y no dudo en recomendar tanto la página web como los productos de Adidas a otros entusiastas del deporte y la moda.
+                    </p>
+                </div>
+                <div class="imgCliente">
+                    <img src="img/person-smiling.png" class="img-clientes">
+                </div>
+            </div>
         </div>
     </section>
     <footer>

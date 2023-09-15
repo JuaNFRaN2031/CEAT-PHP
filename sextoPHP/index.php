@@ -3,6 +3,8 @@
     {
         echo $cad . "<br>";
     }
+    $cadena1=array('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',' ');
+    $cadena2=array('ª','&','(',')','€','=','9','-','1','¡','*','|','¿','?','º','#','~','{','$','7','[','+','/','·','^',']','__');
 ?>
 <!DOCTYPE html>
 <html lang="es-ES">
@@ -63,6 +65,45 @@
             <h2>Números aleatorios: Devuelve un número aleatorio entero entre el límite mínimo y el límite máximo</h2>
         </div>
     </div>
+</div>
+<div class="col-12 card-green">
+    <h2>Ejercicio 1</h2>
+    <p>Frase de Gandhi, sobre la forma de vivir:</p>
+    <cite>"Vive como si fueras a morir manana. Aprende como si fueras a vivir siempre"</cite>
+    <br>
+    <?php
+        $frase = "Vive como si fueras a morir manana. Aprende como si fueras a vivir siempre";
+        $fraseArray = explode(".", $frase);
+        mostrar(strtoupper($fraseArray[0]) . strtolower($fraseArray[1]));
+        mostrar(strtolower($frase));
+        mostrar("La longitud de la primera parte de la frase hasta el '.' tiene: " . strlen($fraseArray[0]) . " caracteres");
+        mostrar("La longitud de la segunda parte de la frase después del '.' tiene: " . strlen($fraseArray[1]) . " caracteres");
+        mostrar("Encriptación en md5 ->" . md5($fraseArray[0]));
+        mostrar($resultado=str_replace($cadena1,$cadena2,$frase));
+    ?>
+</div>
+<div class="col-12 card-lightgreen">
+    <h2>Ejercicio 2</h2>
+    <p>Crea un array de al menos 10 nombres que comiencen por a, b, c y luego muestra solo los que comiencen con B</p>
+    <cite>'Antonia','Ángel','Andrés','Bonifacio','Bruno','Braulio','Bea','Carlos','Clara','Carlota'</cite>
+    <br>
+    <br>
+    <?php
+        $nombres=array('Antonia','Ángel','Andrés','Bonifacio','bruno','Braulio','Bea','Carlos','Clara','Carlota');
+        var_dump($nombres);
+        mostrar("<br>");
+        foreach ($nombres as $nombreItem) {
+            if (str_starts_with($nombreItem, "B")) {
+                mostrar("El nombre '" . $nombreItem . "' empieza por B");
+            } elseif (str_starts_with($nombreItem, "b")){
+                mostrar("El nombre '" . $nombreItem . "' empieza por b");
+            } else {
+                mostrar("El nombre '" . $nombreItem . "' <b>no</b> empieza por B");
+            }
+        };
+
+
+    ?>
 </div>
 <script src="js/script.js"></script>
 </body>

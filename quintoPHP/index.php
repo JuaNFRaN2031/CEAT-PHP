@@ -17,7 +17,29 @@
 <body>
 
 <div class="banner">
-    <img src="img/" alt="">
+    <img src="img/banner-librería.png" alt="">
+</div>
+<div class="iconos-libros">
+    <div>
+        <img src="img/iconos/aventura.jpg" alt="Libros de aventura">
+    </div>
+    <div>
+        <img src="img/iconos/comedia.jpg" alt="Libros de comedia">
+    </div>
+    <div>
+        <img src="img/iconos/horror.jpg" alt="Libros de horror">
+    </div>
+    <div>
+        <img src="img/iconos/clasico.jpg" alt="Libros clásicos">
+    </div>
+    <div>
+        <img src="img/iconos/fantasia.jpg" alt="Libros de fantasía">
+    </div>
+    <div>
+        <img src="img/iconos/drama.jpg" alt="Libros de drama">
+    </div>
+
+
 </div>
 
 </body>

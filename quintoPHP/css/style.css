@@ -8,6 +8,11 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.titulos {
+    font-size: 50pt;
+    text-align: center;
+}
+
 .banner img {
     width: 100%;
 }
@@ -26,10 +31,20 @@ body {
     opacity: 0.25;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
+    transform: scale(1, 1);
+    transition-duration: 450ms;
 }
 
 .iconos-libros img:hover {
     opacity: 1;
+    transform: scale(1.2, 1.2);
+    transition-duration: 450ms;
+}
+
+.clear {
+    display: none;
+    border: 0;
+    clear: both;
 }
 
 #volver {

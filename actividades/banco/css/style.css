@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.ancho {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+.icono-verde {
+    font-size: 50px !important;
+    color: #45BDA4;
+}
+
+.ayuda {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.logo {
+    padding: 20px 0 20px 20px;
+    width: 400px;
+}
+
+.caja-negra {
+    height: 200px;
+    width: 70%;
+    border: 0;
+    margin: 25px auto auto;
+    border-radius: 25px 25px 0 0;
+    background-color: #111111;
+}
+
+.numeracion {
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+}
+
+.numero-activo {
+    color: #FFB600;
+}
+
+.caja-blanca {
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+}
+
+.caja-blanca h3 {
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin: unset;
+    padding-top: 50px;
+}
+
+.formulario {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.formulario input {
+    border: none;
+    font-size: 14px;
+    border-bottom: 0.5px solid #45BDA4;
+    outline: none;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.formulario p {
+    font-size: 10px;
+    text-align: left;
+    line-height: 0;
+    color: rgb(128, 128, 128);
+}
+
+.form-izquierda, .form-derecha {
+    width: 45%;
+    margin: 5px;
+}
+
+.form-izquierda {
+    float: left;
+}
+
+.form-derecha {
+    float: right;
+}
+
+.btn {
+    width: 25% !important;
+    background-color: #45BDA4;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #F2F2F2;
+}
+
+.btn:hover {
+    background-color: #45BDA4;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #F2F2F2;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .derecha {
+        text-align: center;
+    }
+}

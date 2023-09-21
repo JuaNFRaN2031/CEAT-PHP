@@ -1,20 +1,51 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-<head>
-    <meta charset="UTF-8">
-    <title>Banca Tomelloso</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<?php
+    include 'header.php';
+?>
 <body>
-div.
-<span class="material-symbols-outlined">
-contact_support
-</span>
+    <div class="caja-negra">
+        <div class="numeracion">
+            <span class="numero-activo">1</span>
+            <span class="material-symbols-outlined">
+                arrow_forward
+            </span>
+            <span class="numero-inactivo">2</span>
+            <span class="material-symbols-outlined">
+                arrow_forward
+            </span>
+            <span class="numero-inactivo">3</span>
+        </div>
+    </div>
+    <div class="caja-blanca">
+        <h3>¡Comencemos!</h3>
+        <p>Por favor necesitamos estos datos para iniciar tu proceso de alta:</p>
+        <form method="post" id="formulario" class="formulario">
+            <div class="form-izquierda">
+                <label for="dni">DNI</label>
+                <input type="text" class="input" id="dni" name="dni" placeholder="Introduce el DNI">
+                <p>00000000A</p>
+                <label for="mail">EMAIL</label>
+                <input type="email" class="input" id="mail" name="mail" placeholder="Introduce el Email">
+                <p>usuario@dominio.ext</p>
+            </div>
+            <div class="form-derecha">
+                <label for="telefono">TELÉFONO</label>
+                <input type="text" datatype="tel" class="input" id="telefono" name="telefono" placeholder="Introduce el télefono">
+                <p>999 99 99 99</p>
+                <label for="mail2">CONFIRMACIÓN EMAIL</label>
+                <input type="email" class="input" id="mail2" name="mail2" placeholder="Confirma el Email">
+                <p>usuario@dominio.ext</p>
+            </div>
+            <div class="acciones">
+                <p>
+                    <input type="checkbox" id="casilla">
+                    He leído y acepto las <a href="https://aepd.es" target="_blank">políticas de privacidad y de protección de
+                        datos</a>
+                </p>
+                <p>
+                    <input type="submit" class="btn" value="Siguiente" name="enviar" disabled>
+                    <input type="reset" class="btn" value="Limpiar">
+                </p>
+            </div>
+        </form>
+    </div>
 </body>
-</html>

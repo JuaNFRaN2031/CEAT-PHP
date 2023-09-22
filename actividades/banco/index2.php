@@ -1,17 +1,45 @@
-<!DOCTYPE html>
-<html lang="es-ES">
-<head>
-    <meta charset="UTF-8">
-    <title>Banca Tomelloso</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+<?php
+    include 'header.php';
+?>
 <body>
+    <div class="caja-negra">
+        <div class="numeracion">
+            <span class="numero-inactivo">1</span>
+            <span class="material-symbols-outlined">
+                    arrow_forward
+            </span>
+            <span class="numero-activo">2</span>
+            <span class="material-symbols-outlined">
+                    arrow_forward
+            </span>
+            <span class="numero-inactivo">3</span>
+        </div>
+    </div>
+    <div class="caja-blanca">
+        <h3>¡Continuamos!</h3>
+        <p>Por favor necesitamos tus últimos datos para terminar con el proceso de alta:</p>
+        <form method="post" id="formulario2" class="formulario" action="index3.php">
+            <div class="form-izquierda">
+                <input type="text" name="nombre" id="nombre" required placeholder="Introduce tu nombre">
+                <p>Ejemplo: María</p>
 
+                <input type="number" name="edad" id="edad" required placeholder="Introduce tu edad" min="18" max="85">
+                <p>Indica tu edad. Mínimo 18 años</p>
+            </div>
+            <div class="form-derecha">
+                <input type="text" name="apellido1" id="apellido1" required placeholder="Introduce tu primer apellido">
+                <p>Ejemplo: García</p>
+
+                <input type="text" name="apellido2" id="apellido2" required placeholder="Introduce tu segundo apellido">
+                <p>Ejemplo: Romero</p>
+            </div>
+            <div class="acciones">
+                <p class="centrado">
+                    <input type="submit" class="btn" value="Siguiente" id="enviar2" name="enviar2">
+                    <input type="reset" class="btn" value="Limpiar" id="limpiar">
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
 </body>
-</html>

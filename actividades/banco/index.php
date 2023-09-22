@@ -18,21 +18,19 @@
     <div class="caja-blanca">
         <h3>¡Comencemos!</h3>
         <p>Por favor necesitamos estos datos para iniciar tu proceso de alta:</p>
-        <form method="post" id="formulario" class="formulario">
+        <form method="post" id="formulario" class="formulario" action="index2.php" novalidate>
             <div class="form-izquierda">
-                <label for="dni">DNI</label>
-                <input type="text" class="input" id="dni" name="dni" placeholder="Introduce el DNI">
+                <input type="text" class="input" id="dni" name="dni" placeholder="Introduce el DNI" required>
                 <p>00000000A</p>
-                <label for="mail">EMAIL</label>
-                <input type="email" class="input" id="mail" name="mail" placeholder="Introduce el Email">
+
+                <input type="email" class="input" id="mail" name="mail" placeholder="Introduce el Email" required>
                 <p>usuario@dominio.ext</p>
             </div>
             <div class="form-derecha">
-                <label for="telefono">TELÉFONO</label>
-                <input type="text" datatype="tel" class="input" id="telefono" name="telefono" placeholder="Introduce el télefono">
+                <input type="text" datatype="tel" class="input" id="telefono" name="telefono" placeholder="Introduce el télefono" required>
                 <p>999 99 99 99</p>
-                <label for="mail2">CONFIRMACIÓN EMAIL</label>
-                <input type="email" class="input" id="mail2" name="mail2" placeholder="Confirma el Email">
+
+                <input type="email" class="input" id="mail2" name="mail2" placeholder="Confirma el Email" required>
                 <p>usuario@dominio.ext</p>
             </div>
             <div class="acciones">
@@ -41,11 +39,12 @@
                     He leído y acepto las <a href="https://aepd.es" target="_blank">políticas de privacidad y de protección de
                         datos</a>
                 </p>
-                <p>
-                    <input type="submit" class="btn" value="Siguiente" name="enviar" disabled>
-                    <input type="reset" class="btn" value="Limpiar">
+                <p class="centrado">
+                    <input type="submit" class="btn" value="Siguiente" id="enviar" name="enviar" disabled style="cursor: not-allowed">
+                    <input type="reset" class="btn" value="Limpiar" id="limpiar">
                 </p>
             </div>
         </form>
     </div>
+    <script src="js/script.js"></script>
 </body>

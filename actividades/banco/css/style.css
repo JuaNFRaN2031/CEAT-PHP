@@ -79,7 +79,9 @@ html {
     text-align: center;
 }
 
-.formulario input {
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"] {
     border: none;
     font-size: 14px;
     border-bottom: 0.5px solid #45BDA4;
@@ -108,6 +110,26 @@ html {
     float: right;
 }
 
+.acciones {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+#casilla {
+    text-align: left !important;
+}
+
+.centrado {
+    width: 100%;
+    margin: 25px auto auto;
+    text-align: center !important;
+}
+
+.centrado input:first-child {
+    margin-right: 50px;
+}
+
 .btn {
     width: 25% !important;
     background-color: #45BDA4;
@@ -115,14 +137,17 @@ html {
     border-radius: 30px;
     font-size: 15px;
     color: #F2F2F2;
+    cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #45BDA4;
+    background-color: #F2F2F2;
     padding: 15px;
     border-radius: 30px;
+    border: 2px solid #45BDA4;
     font-size: 15px;
-    color: #F2F2F2;
+    color: #45BDA4;
+    cursor: pointer;
 }
 
 .row::after {

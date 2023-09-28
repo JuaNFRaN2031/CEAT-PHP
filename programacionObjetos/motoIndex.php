@@ -2,19 +2,19 @@
 <html lang="es-ES">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de Coche</title>
+    <title>Registro de Moto</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
-    <form action="Coche.php" method="get">
+    <form action="Moto.php" method="get">
         <p>
-            <label for="color">Color: </label>
-            <input type="text" name="color" id="color">
+            <label for="cc">CC: </label>
+            <input type="text" name="cc" id="cc">
         </p>
         <p>
-            <label for="potencia">Potencia (CV): </label>
-            <input type="text" name="potencia" id="potencia">
+            <label for="tipo">Tipo: </label>
+            <input type="text" name="tipo" id="tipo" placeholder="Carretera,Montaña...">
         </p>
         <p>
             <label for="marca">Marca: </label>
@@ -22,6 +22,11 @@
         </p>
         <input type="submit" value="Registrar">
     </form>
+    <?php
+    if (!empty($_GET["mns"])) {
+        echo "<br>" . $_GET["mns"];
+    }
+    ?>
 </div>
 </body>
 </html>

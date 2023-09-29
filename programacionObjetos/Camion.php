@@ -2,7 +2,9 @@
 
 namespace programacionObjetos;
 
-class Camion
+use programacionObjetos\Coche;
+
+class Camion extends Coche
 {
 
 }

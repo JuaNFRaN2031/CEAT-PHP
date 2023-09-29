@@ -2,6 +2,7 @@
 
 namespace actividades\banco;
 
+session_start();
 class Cliente
 {
     public $dni;
@@ -149,4 +150,5 @@ if (!empty($_SESSION["dni"]) && !empty($_SESSION["telefono"]) && !empty($_SESSIO
     $newCliente = new Cliente($_SESSION["dni"], $_SESSION["telefono"], $_SESSION["mail"], $_SESSION["nombre"], $_SESSION["apellido1"], $_SESSION["apellido2"], $_SESSION["edad"]);
 
     var_dump($newCliente);
+    session_abort();
 }

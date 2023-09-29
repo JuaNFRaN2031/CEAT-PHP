@@ -2,3 +2,21 @@
     width: 20%;
     margin: auto;
 }
+
+/* Style the navigation menu */
+.navbar {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Navigation links */
+.navbar a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center; /* If you want the text to be centered */
+}
+
+

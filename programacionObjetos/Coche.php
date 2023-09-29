@@ -105,5 +105,5 @@ if ($_GET["color"] != "" && $_GET["potencia"] != "" && $_GET["marca"] != "") {
     $nuevoCoche = new Coche($color, $potencia, $marca);
     mostrarDatosCoche($nuevoCoche);
 } else {
-    header("Location:http://localhost:63342/CEAT-PHP/programacionObjetos/index.php?mns=Los Campos Son Obligatorios");
+    header("Location:http://localhost:63342/CEAT-PHP/programacionObjetos/indexCoche.php?mns=Los Campos Son Obligatorios");
 }

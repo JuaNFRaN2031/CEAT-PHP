@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="container">
+    <h2>Formulario Moto</h2>
     <form action="Moto.php" method="get">
         <p>
             <label for="cc">CC: </label>
@@ -14,7 +15,7 @@
         </p>
         <p>
             <label for="tipo">Tipo: </label>
-            <input type="text" name="tipo" id="tipo" placeholder="Carretera,Montaña...">
+            <input type="text" name="tipo" id="tipo">
         </p>
         <p>
             <label for="marca">Marca: </label>

@@ -7,7 +7,8 @@
 </head>
 <body>
 <div class="container">
-    <form action="Coche.php" method="get">
+    <h2>Formulario Coche</h2>
+    <form action="Camion.php" method="get">
         <p>
             <label for="color">Color: </label>
             <input type="text" name="color" id="color">

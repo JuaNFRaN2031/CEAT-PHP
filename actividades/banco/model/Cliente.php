@@ -3,6 +3,7 @@
 namespace actividades\banco;
 
 session_start();
+
 class Cliente
 {
     public $dni;
@@ -148,7 +149,15 @@ class Cliente
 
 if (!empty($_SESSION["dni"]) && !empty($_SESSION["telefono"]) && !empty($_SESSION["mail"]) && !empty($_SESSION["nombre"]) && !empty($_SESSION["apellido1"]) && !empty($_SESSION["apellido2"]) && !empty($_SESSION["edad"])) {
     $newCliente = new Cliente($_SESSION["dni"], $_SESSION["telefono"], $_SESSION["mail"], $_SESSION["nombre"], $_SESSION["apellido1"], $_SESSION["apellido2"], $_SESSION["edad"]);
-
-    var_dump($newCliente);
+    include "conexion.php";
+    $link = connect();
+    $consultaInsert = "INSERT INTO cliente (nombre, apellido1, apellido2, email, edad, dni, telefono) values ('" . $newCliente->nombre . "','" . $newCliente->apellido1 . "','" . $newCliente->apellido2 . "','" . $newCliente->mail . "'," . $newCliente->edad . ",'" . $newCliente->dni . "'," . $newCliente->telefono . ");";
+//    echo $consultaInsert;
+    $resultado = mysqli_query($link, $consultaInsert);
+    if ($resultado) {
+        echo "<br> Registro insertado correctamente";
+    } else {
+        echo "<br> Existe un error al insertar el Registro";
+    }
     session_abort();
 }

@@ -29,7 +29,7 @@ include 'header.php';
     <h4>¡Gracias por dejarnos ser tu banco!</h4>
     <div class="acciones">
         <p class="centrado">
-            <a href="Cliente.php">
+            <a href="model/Cliente.php">
                 <input type="button" class="btn" value="Siguiente" id="finalizar" name="finalizar">
             </a>
         </p>

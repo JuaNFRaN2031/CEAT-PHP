@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d17cb656-ca59-4a51-a87d-e3c08478dcdb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/alta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/Administrador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0184cf1d-481c-4b33-b2e2-b07561752b74.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0184cf1d-481c-4b33-b2e2-b07561752b74.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0184cf1d-481c-4b33-b2e2-b07561752b74/storage_v2/_src_/schema/banca_online.JUYbbA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0184cf1d-481c-4b33-b2e2-b07561752b74/storage_v2/_src_/schema/banca_online.JUYbbA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index3.php" beforeDir="false" afterPath="$PROJECT_DIR$/index3.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/js/script.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2XevyZ5ZByRFDz9dvpm6QjZ8GmS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DATW/OneDrive - CENTRO DE ESTUDIOS CEAT/Documentos/htdocs/CEAT-PHP/actividades/banco&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DATW\OneDrive - CENTRO DE ESTUDIOS CEAT\Documentos\htdocs\CEAT-PHP\actividades\banco" />
+      <recent name="C:\Users\DATW\OneDrive - CENTRO DE ESTUDIOS CEAT\Documentos\htdocs\CEAT-PHP\actividades\banco\views" />
+      <recent name="C:\Users\DATW\OneDrive - CENTRO DE ESTUDIOS CEAT\Documentos\htdocs\CEAT-PHP\actividades\banco\model" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d17cb656-ca59-4a51-a87d-e3c08478dcdb" name="Changes" comment="" />
+      <created>1699002614840</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699002614840</updated>
+      <workItem from="1699002615925" duration="13397000" />
+      <workItem from="1699542854115" duration="9895000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

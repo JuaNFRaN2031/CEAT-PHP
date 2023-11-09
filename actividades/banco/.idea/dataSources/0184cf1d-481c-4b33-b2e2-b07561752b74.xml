@@ -1142,8 +1142,8 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </collation>
     <schema id="324" parent="1" name="banca_online">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-03.11:12:09</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-03.09:12:09</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-09.20:30:24</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-09.18:30:24</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="facturacion">
@@ -1186,57 +1186,93 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="338" parent="337" name="ID">
+    <table id="338" parent="324" name="usuarios">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="339" parent="337" name="ID">
+      <AutoIncrement>2</AutoIncrement>
+      <DasType>int(10)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="340" parent="337" name="nombre">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="341" parent="337" name="apellido1">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="342" parent="337" name="apellido2">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="343" parent="337" name="email">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="344" parent="337" name="edad">
+      <DasType>int(2)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="345" parent="337" name="dni">
+      <DasType>varchar(9)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="346" parent="337" name="telefono">
+      <DasType>int(9)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <index id="347" parent="337" name="PRIMARY">
+      <ColNames>ID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="348" parent="337" name="dni">
+      <ColNames>dni</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="349" parent="337" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="350" parent="337" name="dni">
+      <UnderlyingIndexName>dni</UnderlyingIndexName>
+    </key>
+    <column id="351" parent="338" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="339" parent="337" name="nombre">
-      <DasType>varchar(50)|0s</DasType>
+    <column id="352" parent="338" name="email">
+      <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="340" parent="337" name="apellido1">
-      <DasType>varchar(50)|0s</DasType>
+    <column id="353" parent="338" name="password">
+      <DasType>varchar(250)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="341" parent="337" name="apellido2">
-      <DasType>varchar(50)|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <column id="342" parent="337" name="email">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <column id="343" parent="337" name="edad">
-      <DasType>int(2)|0s</DasType>
-      <Position>6</Position>
-    </column>
-    <column id="344" parent="337" name="dni">
-      <DasType>varchar(9)|0s</DasType>
-      <Position>7</Position>
-    </column>
-    <column id="345" parent="337" name="telefono">
-      <DasType>int(9)|0s</DasType>
-      <Position>8</Position>
-    </column>
-    <index id="346" parent="337" name="PRIMARY">
-      <ColNames>ID</ColNames>
+    <index id="354" parent="338" name="PRIMARY">
+      <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="347" parent="337" name="dni">
-      <ColNames>dni</ColNames>
+    <index id="355" parent="338" name="email">
+      <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="348" parent="337" name="PRIMARY">
+    <key id="356" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="349" parent="337" name="dni">
-      <UnderlyingIndexName>dni</UnderlyingIndexName>
+    <key id="357" parent="338" name="email">
+      <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

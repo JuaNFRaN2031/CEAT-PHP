@@ -1142,8 +1142,8 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </collation>
     <schema id="324" parent="1" name="banca_online">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-10.11:17:51</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-10.09:17:51</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-10.16:21:20</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-10.14:21:20</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="facturacion">

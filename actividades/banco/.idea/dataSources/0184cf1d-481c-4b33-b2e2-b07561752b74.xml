@@ -1142,8 +1142,8 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </collation>
     <schema id="324" parent="1" name="banca_online">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-10.08:50:12</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-10.06:50:12</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-10.11:17:51</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-10.09:17:51</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="facturacion">
@@ -1243,7 +1243,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>dni</UnderlyingIndexName>
     </key>
     <column id="351" parent="338" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <DasType>int(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>

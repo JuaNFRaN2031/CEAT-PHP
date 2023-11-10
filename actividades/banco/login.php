@@ -23,6 +23,23 @@ include "header.php";
                 <input type="reset" class="btn" value="Limpiar" id="limpiar">
             </p>
         </div>
+        <div class="row"></div>
+        <br><br>
+        <div class="form-centrado">
+            <?php
+            if (isset($_GET['mensaje'])) {
+                echo "<p class='errors'>" . $_GET['mensaje'] . "</p>";
+            }
+            ?>
+        </div>
+        <br>
+        <div class="form-centrado">
+            <p class="parrafos">¿Has olvidado la contraseña? <a href="password.php" class="numero-activo">Cambiar
+                    Contraseña</a></p>
+            <br>
+            <p class="parrafos">¿No tienes una cuenta? Registrate: <a href="registro.php" class="numero-activo">Aquí</a>
+            </p>
+        </div>
     </form>
 </div>
 <script src="js/script.js"></script>

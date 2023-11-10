@@ -157,6 +157,24 @@ html {
     cursor: pointer;
 }
 
+.lista {
+    text-align: left !important;
+    color: rgba(133, 133, 133, 0.8);
+    font-size: 15px;
+    list-style-type: circle;
+}
+
+.errors {
+    color: darkred !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.parrafos {
+    font-size: 20px !important;
+    text-align: center !important;
+}
+
 .row::after {
     content: "";
     clear: both;

@@ -3,13 +3,17 @@ include "header.php";
 ?>
 <div class="caja-negra">
     <div class="numeracion">
-        <span class="numero-activo">Iniciar Sesión</span>
+        <span class="numero-activo">Registrarse</span>
     </div>
 </div>
 <div class="caja-blanca">
-    <h3>¡Bienvenido de nuevo!</h3>
-    <p>Inicia sesión para ver los usuarios registrados en nuestro programa</p>
-    <form method="post" id="login" class="formulario" action="validarLogin.php" novalidate>
+    <h3>¡Bienvenido!</h3>
+    <p>Registrate en nuestro programa</p>
+    <form method="post" id="login" class="formulario" action="alta.php" novalidate>
+        <div class="form-centrado">
+            <input type="text" class="input" id="nombre" name="nombre" placeholder="Introduce tu nombre y apellidos"
+                   required>
+        </div>
         <div class="form-izquierda">
             <input type="email" class="input" id="email" name="email" placeholder="Introduce el Email" required>
         </div>

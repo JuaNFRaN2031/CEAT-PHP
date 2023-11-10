@@ -103,6 +103,12 @@ html {
     margin: 5px;
 }
 
+.form-centrado {
+    width: 90%;
+    margin: 5px auto;
+    text-align: center;
+}
+
 .form-izquierda {
     float: left;
 }

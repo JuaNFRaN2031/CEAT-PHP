@@ -1142,8 +1142,8 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </collation>
     <schema id="324" parent="1" name="banca_online">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-11-09.20:30:24</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-11-09.18:30:24</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-11-10.08:50:12</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-10.06:50:12</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="325" parent="1" name="facturacion">
@@ -1256,22 +1256,26 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <DasType>varchar(250)|0s</DasType>
       <Position>3</Position>
     </column>
-    <index id="354" parent="338" name="PRIMARY">
+    <column id="354" parent="338" name="nombre">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="355" parent="338" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="355" parent="338" name="email">
+    <index id="356" parent="338" name="email">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="356" parent="338" name="PRIMARY">
+    <key id="357" parent="338" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="357" parent="338" name="email">
+    <key id="358" parent="338" name="email">
       <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
   </database-model>

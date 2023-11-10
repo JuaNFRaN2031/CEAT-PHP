@@ -1,11 +1,19 @@
 <?php
+include "header.php";
 include "model/conexion.php";
 global $link;
-if (!empty($_POST['email']) && !empty($_POST['password'])) {
+if (!empty($_POST['nombre']) && !empty($_POST['email']) && !empty($_POST['password'])) {
     $link = connect();
+    $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $paso = false;
+    if (isset($nombre)) {
+        echo "Nombre registrado correctamente <br>";
+    } else {
+        echo "El nombre está vacio <br>";
+    }
+
     if (validarEmail($email)) {
         echo "Email validado correctamente <br>";
         $paso = true;
@@ -26,8 +34,8 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
     }
     if ($paso) {
         $passwordSeguro = password_hash($password, PASSWORD_BCRYPT);
-        $insertarUser = "insert into usuarios (email,password) values 
-            ('" . $email . "','" . $passwordSeguro . "');";
+        $insertarUser = "insert into usuarios (nombre, email,password) values 
+            ('" . $nombre . "','" . $email . "','" . $passwordSeguro . "');";
         $result = mysqli_query($link, $insertarUser);
         if ($result) {
             echo "<br> Alta realizada correctamente";
@@ -69,3 +77,7 @@ function validarPassword($password)
         return false;
     }
 }
+
+?>
+<br><br>
+<a class="btn" style="text-decoration: none" href="login.php">Ir a Iniciar Sesión</a>

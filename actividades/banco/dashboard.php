@@ -68,15 +68,15 @@ $resultado = mysqli_query($link, $consultaClientes);
             </tr>
             </thead>
             <tbody>
-<!--            --><?php
-//            foreach ($resultado as $resultadoItem) {
-//                echo "<tr>";
-//                echo "<th scope=row class='col-2'>" . $resultadoItem['id'] . "</th>";
-//                echo "<td class='col-2'>" . $resultadoItem['nombre'] . "</td>";
-//                echo "<td class='col-2'>" . $resultadoItem['email'] . "</td>";
-//                echo "</tr>";
-//            }
-//            ?>
+            <?php
+            //            foreach ($resultado as $resultadoItem) {
+            //                echo "<tr>";
+            //                echo "<th scope=row class='col-2'>" . $resultadoItem['id'] . "</th>";
+            //                echo "<td class='col-2'>" . $resultadoItem['nombre'] . "</td>";
+            //                echo "<td class='col-2'>" . $resultadoItem['email'] . "</td>";
+            //                echo "</tr>";
+            //            }
+            ?>
             <tr>
                 <th scope="row" class="col-2">1</th>
                 <td class="col-5">Mark</td>

@@ -16,7 +16,6 @@ class Coche
     public $fecha_fabricacion;
     public $extras;
     public $observaciones;
-    public $foto_modelo;
 
     /**
      * @param $matricula
@@ -31,23 +30,12 @@ class Coche
      * @param $fecha_fabricacion
      * @param $extras
      * @param $observaciones
-     * @param $foto_modelo
      */
-    public function __construct($matricula, $num_bastidor, $id_marca, $modelo, $cilindrada, $potencia, $id_color, $precio, $id_tipo_motor, $fecha_fabricacion, $extras, $observaciones, $foto_modelo)
+    public function __construct($matricula, $num_bastidor, $id_marca)
     {
         $this->matricula = $matricula;
         $this->num_bastidor = $num_bastidor;
         $this->id_marca = $id_marca;
-        $this->modelo = $modelo;
-        $this->cilindrada = $cilindrada;
-        $this->potencia = $potencia;
-        $this->id_color = $id_color;
-        $this->precio = $precio;
-        $this->id_tipo_motor = $id_tipo_motor;
-        $this->fecha_fabricacion = $fecha_fabricacion;
-        $this->extras = $extras;
-        $this->observaciones = $observaciones;
-        $this->foto_modelo = $foto_modelo;
     }
 
     /**
@@ -241,35 +229,19 @@ class Coche
     {
         $this->observaciones = $observaciones;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getFotoModelo()
-    {
-        return $this->foto_modelo;
-    }
-
-    /**
-     * @param mixed $foto_modelo
-     */
-    public function setFotoModelo($foto_modelo)
-    {
-        $this->foto_modelo = $foto_modelo;
-    }
 }
 
-if (!empty($_SESSION['matricula']) && !empty($_SESSION['num_bastidor']) && !empty($_SESSION['id_marca'])) {
-    $newCoche = new Coche($_SESSION['matricula'], $_SESSION['num_bastidor'], $_SESSION['id_marca'], $_SESSION['modelo'], $_SESSION['cilindrada'], $_SESSION['potencia'], $_SESSION['id_color'], $_SESSION['precio'], $_SESSION['id_tipo_motor'], $_SESSION['fecha_fabricacion'], $_SESSION['extras'], $_SESSION['observaciones'], $_SESSION['foto_modelo']);
-    include "conexion.php";
-    $link = connect();
-    $consultaInsert = "INSERT INTO coches (matricula, num_bastidor, id_marca, modelo, cilindrada, potencia, id_color, precio, id_tipo_motor, fecha_fabricacion, extras, observaciones, foto_modelo) values (" . $newCoche->matricula . "," . $newCoche->num_bastidor . "," . $newCoche->id_marca . "," . $newCoche->modelo . "," . $newCoche->cilindrada . "," . $newCoche->potencia . "," . $newCoche->id_color . "," . $newCoche->precio . "," . $newCoche->id_tipo_motor . "," . $newCoche->fecha_fabricacion . "," . $newCoche->extras . "," . $newCoche->observaciones . "," . $newCoche->foto_modelo . ");";
-    echo $consultaInsert;
-    $resultado = mysqli_query($link, $consultaInsert);
-    if ($resultado) {
-        echo "<br> Registro insertado correctamente";
-    } else {
-        echo "<br> Existe un error al insertar el Registro";
-    }
-    session_abort();
-}
+//if (!empty($_SESSION['matricula']) && !empty($_SESSION['num_bastidor']) && !empty($_SESSION['id_marca'])) {
+//    $newCoche = new Coche($_SESSION['matricula'], $_SESSION['num_bastidor'], $_SESSION['id_marca'], $_SESSION['modelo'], $_SESSION['cilindrada'], $_SESSION['potencia'], $_SESSION['id_color'], $_SESSION['precio'], $_SESSION['id_tipo_motor'], $_SESSION['fecha_fabricacion'], $_SESSION['extras'], $_SESSION['observaciones']);
+//    include "conexion.php";
+//    $link = connect();
+//    $consultaInsert = "INSERT INTO coches (matricula, num_bastidor, id_marca, modelo, cilindrada, potencia, id_color, precio, id_tipo_motor, fecha_fabricacion, extras, observaciones) values (" . $newCoche->matricula . "," . $newCoche->num_bastidor . "," . $newCoche->id_marca . "," . $newCoche->modelo . "," . $newCoche->cilindrada . "," . $newCoche->potencia . "," . $newCoche->id_color . "," . $newCoche->precio . "," . $newCoche->id_tipo_motor . "," . $newCoche->fecha_fabricacion . "," . $newCoche->extras . "," . $newCoche->observaciones . ");";
+//    echo $consultaInsert;
+//    $resultado = mysqli_query($link, $consultaInsert);
+//    if ($resultado) {
+//        echo "<br> Registro insertado correctamente";
+//    } else {
+//        echo "<br> Existe un error al insertar el Registro";
+//    }
+//    session_abort();
+//}

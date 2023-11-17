@@ -1,6 +1,8 @@
 <?php
 include "header.php";
-
+include "model/conexion.php";
+global $link;
+$link = connect();
 ?>
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid justify-content-center">
@@ -10,7 +12,7 @@ include "header.php";
     </div>
 </nav>
 <h2 class="text-center mt-2">REGISTRO VEHICULO</h2>
-<form method="post" action="">
+<form method="post" action="controller/controller.php">
     <div class="card bg-light bg-gradient p-4 m-4">
         <div class="d-flex flex-row justify-content-between mb-2">
             <div class="col-5 mb-2 ms-3">
@@ -19,7 +21,7 @@ include "header.php";
             </div>
             <div class="col-5 mb-2 mx-3">
                 <label for="num_bastidor" class="form-label">Número Bastidor *</label>
-                <input type="text" class="form-control" id="num_bastidor" placeholder="Nª bastidor del vehículo"
+                <input type="text" class="form-control" maxlength="12" id="num_bastidor" placeholder="Nª bastidor del vehículo"
                        name="num_bastidor">
             </div>
         </div>
@@ -28,9 +30,13 @@ include "header.php";
                 <label for="id_marca" class="form-label">Marca *</label>
                 <select class="form-select" aria-label="Select Marca" ID="id_marca" name="id_marca">
                     <option selected disabled>-- Selecciona una marca --</option>
-                    <option value="1">Toyota</option>
-                    <option value="2">Volkswagen</option>
-                    <option value="3">Seat</option>
+                    <?php
+                    $motores = "SELECT * FROM marcas";
+                    $resultadoMotor = mysqli_query($link, $motores);
+                    while ($fila = mysqli_fetch_assoc($resultadoMotor)) {
+                        echo "<option value=" . $fila['id'] . ">" . $fila['nombre'] . "</option>";
+                    }
+                    ?>
                 </select>
             </div>
             <div class="col-5 mb-2 mx-3">
@@ -56,10 +62,13 @@ include "header.php";
                 <label for="id_color" class="form-label">Color</label>
                 <select class="form-select" aria-label="Select Color" ID="id_color" name="id_color">
                     <option selected disabled>-- Selecciona un color --</option>
-                    <option value="1">Azul Metalizado</option>
-                    <option value="2">Gris</option>
-                    <option value="3">Rojo Metalizado</option>
-                    <option value="4">Negro</option>
+                    <?php
+                    $motores = "SELECT * FROM colores";
+                    $resultadoMotor = mysqli_query($link, $motores);
+                    while ($fila = mysqli_fetch_assoc($resultadoMotor)) {
+                        echo "<option value=" . $fila['id'] . ">" . $fila['nombre'] . ($fila['metalizado'] != 0 ? " - Metalizado" : "") . "</option>";
+                    }
+                    ?>
                 </select>
             </div>
             <div class="col-5 mb-2 mx-3">
@@ -73,10 +82,13 @@ include "header.php";
                 <label for="id_tipo_motor" class="form-label">Tipo Motor</label>
                 <select class="form-select" aria-label="Select Tipo Motor" ID="id_tipo_motor" name="id_tipo_motor">
                     <option selected disabled>-- Selecciona un tipo de motor --</option>
-                    <option value="1">Diesel</option>
-                    <option value="2">Gasolina</option>
-                    <option value="3">Híbrido</option>
-                    <option value="4">Eléctrico</option>
+                    <?php
+                    $motores = "SELECT * FROM tipo_motor";
+                    $resultadoMotor = mysqli_query($link, $motores);
+                    while ($fila = mysqli_fetch_assoc($resultadoMotor)) {
+                        echo "<option value=" . $fila['id'] . ">" . $fila['tipo_motor'] . "</option>";
+                    }
+                    ?>
                 </select>
             </div>
             <div class="col-5 mb-2 mx-3">
@@ -96,15 +108,13 @@ include "header.php";
             </div>
         </div>
         <div class="d-flex flex-row-reverse">
-            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            <button type="submit" name="enviar" class="btn btn-outline-primary">Enviar</button>
         </div>
     </div>
 </form>
 
 <div class="card m-4 p-4">
     <?php
-    include "model/conexion.php";
-    $link = connect();
     if (isset($_POST["matricula"]) && isset($_POST["num_bastidor"]) && isset($_POST["id_marca"])) {
         $matricula = $_POST['matricula'];
         $numBastidor = $_POST['num_bastidor'];
@@ -121,15 +131,15 @@ include "header.php";
         $consultaInsert = "INSERT INTO coches (matricula, num_bastidor, id_marca, modelo, cilindrada, potencia, id_color, precio, id_tipo_motor, fecha_fabricacion, extras, observaciones) values ('" . $matricula . "','" . $numBastidor . "'," . $id_marca . ",'" . $modelo . "'," . $cilindrada . "," . $potencia . "," . $id_color . "," . $precio . "," . $id_tipo_motor . ",'" . $fecha_fabricacion . "','" . $extras . "','" . $observaciones . "');";
         $resultado = mysqli_query($link, $consultaInsert);
         if ($resultado) {
-             echo "Registro insertado correctamente <br>";
+            echo "Registro insertado correctamente <br>";
         } else {
-             echo "Error al insertar el vehículo <br>";
+            echo "Error al insertar el vehículo <br>";
         }
     }
-    $consulta = "SELECT * FROM coches";
-    $resultado = mysqli_query($link, $consulta);
+    $consultaCoche = "SELECT * FROM coches";
+    $resultado = mysqli_query($link, $consultaCoche);
     while ($row = mysqli_fetch_array($resultado)) {
-        echo "<li>" . $row['matricula'] . " - " . $row['num_bastidor'] . " - " . $row['id_marca'] . " - " . $row['modelo'] . " - " . $row['cilindrada'] . " - " . $row['potencia'] . " - " . $row['id_color'] . " - " . $row['precio'] . " - " . $row['id_tipo_motor'] . " - " . $row['fecha_fabricacion'] . " - " . $row['extras'] . " - " . $row['observaciones'] . "</li>";
+        echo "<li>". $row['id'] . " => " . $row['matricula'] . " - " . $row['num_bastidor'] . " - " . $row['id_marca'] . " - " . $row['modelo'] . " - " . $row['cilindrada'] . " - " . $row['potencia'] . " - " . $row['id_color'] . " - " . $row['precio'] . " - " . $row['id_tipo_motor'] . " - " . $row['fecha_fabricacion'] . " - " . $row['extras'] . " - " . $row['observaciones'] . "</li>";
     }
     mysqli_free_result($resultado);
     mysqli_close($link);
